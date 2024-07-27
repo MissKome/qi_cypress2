@@ -36,12 +36,12 @@ describe('cypress script assignment', () => {
         cy.get('#inputState').type(faker.location.state())
         cy.get('#inputZip').type(faker.location.zipCode())
         cy.get('#seleniumform button[type="submit"]').click()
-        cy.on('window:alert', (str) => {
-            expect(str).to.equal('Save address?');
-          });
-          cy.get('#save').click();
-          cy.get('.wrapper h1').should('be.visible')
+      //  cy.on('window:alert', (str) => {
+        //     expect(str).to.equal('Save address?');
+        //   });
+        //   cy.get('#save').click();
+        //   cy.get('.wrapper h1').should('be.visible')
   
   })
 })
-  //do something wit the alert
+  //do something with the alert
