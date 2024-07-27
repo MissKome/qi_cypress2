@@ -21,7 +21,7 @@ describe('cypress script assignment', () => {
 
     })
 
-    it.only('using unique data to fill the form', () => {
+    it('using unique data to fill the form', () => {
         cy.get('a[href*="/input-form-demo"]').should('be.visible').click()
         cy.get('.wrapper h1').should('be.visible')
         cy.get('#name').type(faker.person.fullName())
