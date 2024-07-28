@@ -1,0 +1,26 @@
+{
+
+"nameField": "#name",
+"name": "John Doe",
+"emailField": "[name='email']",
+"email": "jondoe@gmail.com",
+"passwordField": "[name='password']",
+"password": "Windows12345@",
+"companyField": "#company",
+"company": "Test Company",
+"websiteNameField": "#websitename",
+"website": "http://test.com",
+"countryField": "[name='country']",
+"country": "NG",
+"cityField":  "[name='city']",
+"city": "Ibeju",
+"address1Field": "[name='address_line1']",
+"address1": "this is my first address",
+"address2Field":  "[name='address_line2']",
+"address2": "this is my second address",
+"inputStateField": "#inputState",
+"state": "Lagos",
+"inputZipField": "#inputZip",
+"zipCode": "123005",
+"submitButton": "#seleniumform button[type='submit']"
+}
