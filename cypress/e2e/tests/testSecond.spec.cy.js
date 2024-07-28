@@ -43,12 +43,6 @@ describe('cypress script assignment', () => {
         cy.get(ell.inputStateField).type(faker.location.state())
         cy.get(ell.inputZipField).type(faker.location.zipCode())
         cy.get(ell.submitButton).click()
-      //  cy.on('window:alert', (str) => {
-        //     expect(str).to.equal('Save address?');
-        //   });
-        //   cy.get('#save').click();
-        //   cy.get('.wrapper h1').should('be.visible')
-  
+   
   })
 })
-  //do something with the alert
