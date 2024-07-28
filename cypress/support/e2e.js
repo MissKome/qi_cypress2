@@ -11,7 +11,5 @@ import { Faker } from "@faker-js/faker"
 
 beforeEach(() => {
     cy.visit('/')
-    cy.get('.wrapper h1').should('be.visible')
-    cy.get('a[href*="/input-form-demo"]').should('be.visible').click()
-    cy.get('.wrapper h1').should('be.visible')
+   
 })

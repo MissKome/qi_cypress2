@@ -8,8 +8,10 @@ describe('cypress script assignment', () => {
     })
 
 })
-    it.only('using arbitrary data to fill the form', () => {
-        
+    it('using arbitrary data to fill the form', () => {
+            cy.get(ell.pageTitle).should('be.visible')
+            cy.get(ell.inputFormOption).should('be.visible').click()
+            cy.get(ell.pageTitle).should('be.visible')
             cy.get(ell.nameField).type(ell.name)
             cy.get(ell.emailField).eq(1).type(ell.email)
             cy.get(ell.passwordField).type(ell.password)
@@ -26,6 +28,9 @@ describe('cypress script assignment', () => {
     })
 
     it('using unique data to fill the form', () => {
+        cy.get(ell.pageTitle).should('be.visible')
+        cy.get(ell.inputFormOption).should('be.visible').click()
+        cy.get(ell.pageTitle).should('be.visible')
         cy.get(ell.nameField).type(faker.person.fullName())
         cy.get(ell.emailField).eq(1).type(faker.internet.email())
         cy.get(ell.passwordField).type(faker.internet.password())

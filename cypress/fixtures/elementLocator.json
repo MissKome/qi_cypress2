@@ -1,5 +1,6 @@
 {
-
+"pageTitle": ".wrapper h1",
+"inputFormOption": "a[href*='/input-form-demo']",
 "nameField": "#name",
 "name": "John Doe",
 "emailField": "[name='email']",
